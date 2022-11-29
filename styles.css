@@ -36,11 +36,20 @@ h1 {
   display: flex;
   margin-top: 2rem;
   gap: 10rem;
+  position: relative;
 }
 .emoji {
   font-size: 3rem;
-  animation: spin 2s linear infinite;
+  animation: spin 4s linear infinite;
   cursor: pointer;
+  user-select: none;
+}
+
+.emoji-container > p {
+  font-size: 12px;
+  position: absolute;
+  top: 5rem;
+  left: 1rem;
 }
 
 @keyframes color {
@@ -57,7 +66,7 @@ h1 {
     transform: perspective(400px) rotateY(0deg);
   }
   50% {
-    transform: perspective(400px) rotateY(180deg);
+    transform: perspective(400px) rotateY(360deg) skew(10deg, 10deg);
   }
   100% {
     transform: perspective(400px) rotateY(0deg);
