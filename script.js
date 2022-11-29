@@ -1,5 +1,5 @@
 function fireConfetti() {
-  var count = 300;
+  var count = 400;
   var defaults = {
     origin: { y: -0.4 },
     angle: 270,

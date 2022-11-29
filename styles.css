@@ -42,6 +42,12 @@ h1 {
   animation: spin 2s linear infinite;
   cursor: pointer;
 }
+.emoji {
+  font-size: 3rem;
+  animation: spin 4s linear infinite;
+  cursor: pointer;
+  user-select: none;
+}
 
 @keyframes color {
   from {
